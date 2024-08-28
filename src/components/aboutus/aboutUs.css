@@ -16,7 +16,7 @@ body {
   color: #fff;
   text-align: center;
   padding: 400px 50px;
-  border-radius: 60px;
+  border-radius: 30px;
   font-family: 'Playfair Display', serif;
 }
 
@@ -70,9 +70,10 @@ body {
 }
 
 .philosophy-text, .service-text, .chooseus-text {
+  font-family: 'Lato', sans-serif;
   flex: 1;
   padding-right: 50px;
-  color: black;
+  color: rgb(61, 61, 61);
 }
 
 .philosophy-image img, .service-image img, .chooseus-image img {

@@ -46,10 +46,10 @@ const ContactUs = () => {
     <div
       className="contact-us-section"
       style={{
-        backgroundImage: `url(${backgroundImage})`,  // Background image applied here
+        backgroundImage: `url(${backgroundImage})`,  
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',  // Ensure the image doesn't repeat
+        backgroundRepeat: 'no-repeat',
         backgroundColor: 'rgba(255, 255, 255, 0.85)',
         backgroundBlendMode: 'overlay',
         padding: '40px',
@@ -59,7 +59,7 @@ const ContactUs = () => {
         boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
         color: '#333',
         fontFamily: 'Arial, sans-serif',
-        position: 'relative'  // Ensures the section layout remains consistent
+        position: 'relative'  
       }}
     >
       <p>
@@ -67,13 +67,13 @@ const ContactUs = () => {
       </p>
       <h2>Reach Out</h2>
       <div className="contact-options">
-        <a href="tel:+123456789" className="contact-option">
+        <a href="tel:0701728828" className="contact-option">
           <FaPhone /> Call Us
         </a>
-        <a href="https://wa.me/123456789" className="contact-option">
+        <a href="https://wa.me/0701728828" className="contact-option">
           <FaWhatsapp /> WhatsApp
         </a>
-        <a href="https://instagram.com/yourprofile" className="contact-option">
+        <a href="https://www.instagram.com/top_bride_weddings/#" className="contact-option">
           <FaInstagram /> Instagram
         </a>
       </div>

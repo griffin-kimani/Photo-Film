@@ -83,7 +83,7 @@ const AboutUs = () => {
       <div className="additional-sections">
         <Contactus />
         <Review />
-        <FAQ />
+        <FAQ /> 
       </div>
     </div>
   );

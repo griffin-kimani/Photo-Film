@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Footer } from './containers';
+import { Header } from './containers';
 import {
   Navbar,
   Home,
@@ -34,6 +35,7 @@ const App = () => {
               path="/"
               element={
                 <>
+                  <Header />
                   <Home />
                   <About />
                   <Portfolio />

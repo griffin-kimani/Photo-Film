@@ -14,18 +14,18 @@
   display: flex;
   justify-content: center;
   gap: 50px;
-  margin:100px 40px; /* Increased margin to create more gap */
+  margin:100px 40px; 
   margin-top: 160px; 
 }
 
 .home-page .image-box {
   position: relative;
   overflow: hidden;
-  border-radius: 10px; /* Increased border-radius for a more modern look */
+  border-radius: 10px; 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 600px; /* Adjusted width for better responsiveness */
-  height: 450px; /* Increased height for a more visually appealing look */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Added box-shadow for a subtle 3D effect */
+  width: 600px; 
+  height: 450px; 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
 }
 
 .home-page .image-box img {
@@ -37,7 +37,7 @@
 }
 
 .home-page .image-box:hover img {
-  transform: scale(1.1); /* Added zoom effect on hover for visual appeal */
+  transform: scale(1.1); 
 }
 
 .home-page .hover-text {
@@ -46,9 +46,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 2rem; /* Increased font size for more emphasis */
+  font-size: 2rem; 
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5); /* Added semi-transparent background for readability */
+  background-color: rgba(0, 0, 0, 0.5); 
   padding: 10px 20px;
   border-radius: 5px;
   display: none;
