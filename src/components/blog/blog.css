@@ -1,58 +1,83 @@
 .blog-section {
-    padding: 20px;
-    text-align: center;
-    background-color: #f9f9f9;
-  }
-  
-  .blog-section h2 {
-    margin-bottom: 20px;
-    color: #ee0e0e;
-  }
-  
-  .couples {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
-  }
-  
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.blog-section h2 {
+  margin-bottom: 20px;
+  color: #ee0e0e;
+}
+
+.couples {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Default style for larger screens */
+.couple {
+  flex: 1 1 calc(20% - 20px);
+  max-width: calc(20% - 20px);
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+/* Media query for medium screens (tablets, small laptops) */
+@media (max-width: 1024px) {
   .couple {
-    width: calc(20% - 20px);
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease;
+    flex: 1 1 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
   }
-  
-  .couple:hover {
-    transform: scale(1.05);
+}
+
+/* Media query for small screens (mobile devices) */
+@media (max-width: 768px) {
+  .couple {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
   }
-  
-  .couple a {
-    text-decoration: none;
-    color: inherit;
+}
+
+/* Media query for extra small screens */
+@media (max-width: 480px) {
+  .couple {
+    flex: 1 1 100%;
+    max-width: 100%;
   }
-  
-  .couple-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .couple-info {
-    padding: 10px;
-  }
-  
-  .couple-info h3 {
-    margin: 0;
-    font-size: 1.2rem;
-    color: #ee0e0e;
-  }
-  
-  .couple-info p {
-    margin: 5px 0 0;
-    font-size: 0.9rem;
-    color: #777;
-  }
-  
+}
+
+.couple:hover {
+  transform: scale(1.05);
+}
+
+.couple a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.couple-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.couple-info {
+  padding: 10px;
+}
+
+.couple-info h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #ee0e0e;
+}
+
+.couple-info p {
+  margin: 5px 0 0;
+  font-size: 0.9rem;
+  color: #777;
+}

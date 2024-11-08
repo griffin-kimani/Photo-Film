@@ -1,43 +1,56 @@
 .home-page .introduction {
   text-align: center;
-  margin: 80px auto; 
-  padding: 25px;
+  margin: 40px auto;
+  padding: 20px;
   max-width: 1200px;
   color: #333;
 }
 
 .home-page .introduction p {
-  margin-bottom: 40px; 
+  margin-bottom: 20px;
 }
 
 .home-page .image-container {
   display: flex;
   justify-content: center;
-  gap: 50px;
-  margin:100px 40px; 
-  margin-top: 160px; 
+  gap: 20px;
+  margin: 50px 20px;
+  flex-wrap: wrap; 
+}
+
+/* Styles for larger screens */
+@media (min-width: 769px) {
+  .home-page .image-container {
+    flex-direction: row;
+  }
+
+  .home-page .image-box {
+    flex: 1; 
+    max-width: 48%; 
+  }
 }
 
 .home-page .image-box {
   position: relative;
   overflow: hidden;
-  border-radius: 10px; 
+  border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 600px; 
-  height: 450px; 
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+  width: 100%;
+  max-width: 600px;
+  height: 350px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .home-page .image-box img {
-  width: 100%; 
-  height: 100%; 
-  object-fit: cover; 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   display: block;
   transition: transform 0.3s ease;
 }
 
 .home-page .image-box:hover img {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 .home-page .hover-text {
@@ -46,10 +59,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 2rem; 
+  font-size: 1.5rem;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5); 
-  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 15px;
   border-radius: 5px;
   display: none;
 }
@@ -60,18 +73,35 @@
 
 .home-page .label {
   text-align: center;
-  margin-top: 20px;
-  font-size: 1.5rem;
+  margin-top: 10px;
+  font-size: 1.2rem;
   color: #333;
 }
 
-.home-page .image-box a {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-  transition: transform 0.3s ease;
-}
+@media (max-width: 768px) {
+  .home-page .introduction {
+    margin: 20px auto;
+    padding: 15px;
+  }
 
-.home-page .image-box a:hover {
-  transform: scale(1.1); 
+  .home-page .image-container {
+    gap: 10px;
+    margin: 20px 10px;
+    flex-direction: column; 
+  }
+
+  .home-page .image-box {
+    width: 100%;
+    max-width: 90%;
+    height: 250px; 
+  }
+
+  .home-page .hover-text {
+    font-size: 1.2rem;
+  }
+
+  .home-page .label {
+    font-size: 1rem;
+    margin-top: 8px;
+  }
 }

@@ -13,10 +13,10 @@ app.use(bodyParser.json());
 
 // Email configuration
 const transporter = nodemailer.createTransport({
-  service: 'gmail', // Replace with your email service
+  service: 'gmail', 
   auth: {
-    user: 'your-email@gmail.com', // Replace with your email
-    pass: 'your-email-password',   // Replace with your email password
+    user: 'your-email@gmail.com',
+    pass: 'your-email-password',   
   },
 });
 
@@ -25,7 +25,7 @@ app.post('/api/contact', (req, res) => {
 
   const mailOptions = {
     from: email,
-    to: 'photographer-email@gmail.com', // Replace with the photographer's email
+    to: 'photographer-email@gmail.com', 
     subject: 'New Booking Request',
     text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nLocation: ${location}\nEvent: ${event}\nDate: ${date}\nBudget: ${budget}\nDetails: ${details}`,
   };

@@ -20,8 +20,8 @@
   display: flex;
   align-items: center;
   gap: 20px;
-  max-width: 500px;
   flex: 1;
+  max-width: 500px;
 }
 
 .testimony.reverse {
@@ -36,4 +36,28 @@
 
 .testimony-text {
   flex: 1;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .testimonies {
+    flex-direction: column;
+    align-items: center; /* Center align items on smaller screens */
+  }
+
+  .testimony {
+    flex-direction: column;
+    max-width: 100%; /* Make the testimony take full width */
+    text-align: center; /* Center text on smaller screens */
+  }
+
+  .testimony.reverse {
+    flex-direction: column; /* Reset reverse direction on smaller screens */
+  }
+
+  .testimony-image {
+    width: 100%;
+    max-width: 300px; /* Slightly larger image on smaller screens for readability */
+    margin-bottom: 10px; /* Add spacing below the image */
+  }
 }
